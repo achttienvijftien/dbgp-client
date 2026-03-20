@@ -1,0 +1,28 @@
+{
+    "name": "achttienvijftien/dbgp-client",
+    "description": "PHP DBGp protocol client library",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0",
+        "friendsofphp/php-cs-fixer": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DbgpClient\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DbgpClient\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "cs-check": "php-cs-fixer fix --dry-run --diff",
+        "cs-fix": "php-cs-fixer fix"
+    }
+}
